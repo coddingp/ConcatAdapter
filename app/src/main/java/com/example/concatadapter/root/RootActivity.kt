@@ -77,6 +77,6 @@ class RootActivity : AppCompatActivity() {
         bannerAdapter = BannerAdapter(DataSource.getBanner())
         userDetailAdapter = UserDetailAdapter(userDetails)
         concatAdapter = ConcatAdapter(userDetailAdapter, userVerticalAdapter, bannerAdapter)
-//        recyclerView.adapter = concatAdapter
+        recyclerView.adapter = concatAdapter
     }
 }

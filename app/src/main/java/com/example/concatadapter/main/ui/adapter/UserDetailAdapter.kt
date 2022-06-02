@@ -10,10 +10,7 @@ class UserDetailAdapter(
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        when (viewType) {
-            R.layout.item_layout_user_details -> DataViewHolder(parent)
-            else -> throw IllegalStateException("Unknown view type: $viewType")
-        }
+        DataViewHolder(parent)
 
     override fun getItemCount(): Int = 1
 

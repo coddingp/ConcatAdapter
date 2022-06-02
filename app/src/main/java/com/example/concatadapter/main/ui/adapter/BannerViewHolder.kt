@@ -31,7 +31,7 @@ class BannerViewHolder(
 
     fun bind(commercialBanner: CommercialBanner) {
             with(binding) {
-                Glide.with(imageViewBanner.context).load(DataSource.getBanner())
+                Glide.with(imageViewBanner.context).load(commercialBanner.bannerImage).placeholder(R.drawable.ic_launcher_foreground).into(imageViewBanner)
         }
     }
 }
